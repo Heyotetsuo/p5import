@@ -29,7 +29,7 @@ function getProps(o, callback){
 	var p,q=null;
 	for (p in o.prototype){
 		if ( alreadyFound(p) ) continue;
-		a=[];
+		q={};
 		if ( o.hasOwnProperty(p) ){
 			q[p] = getProps( o[p], callback );
 		} else {
