@@ -5,6 +5,7 @@ function alreadyFound(query, o){
 			return true;
 		} else {
 			return alreadyFound( query, o.prototype[p] );
+		}
 	}
 }
 function clearInput(){
